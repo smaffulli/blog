@@ -62,7 +62,7 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "New Kubecost product features and the latest in Kubernetes technology."
   links:
-    - label: "Website"
+    - label: "Kubecost site"
       icon: "fas fa-fw fa-link"
       url: "https://kubecost.com"
     - label: "GitHub"
@@ -71,7 +71,7 @@ author:
 
 footer:
   links:
-    - label: "Website"
+    - label: "Kubecost site"
       icon: "fas fa-fw fa-link"
       url: "https://kubecost.com"
     - label: "GitHub"
