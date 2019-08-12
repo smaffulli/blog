@@ -1,10 +1,12 @@
 ---
 title: "Kubernetes cost monitoring: approaches & best practices"
-date: 2019-08-04T15:34:30-04:00
+date: 2019-08-12T18:34:30-04:00
 categories:
   - blog
 tags:
   - cost monitoring
+  - Kubecost
+  - Chargeback
 ---
 
 At [Kubecost](http://kubecost.com), we help teams monitor and manage Kubernetes spend. Teams commonly implement their first Kubernetes chargeback or showback solution with our software, and we frequently get asked questions about how to make this process go as smoothly as possible. This guide shares some of the different approaches to cost monitoring, best practices, and pitfalls that we’ve seen. 
