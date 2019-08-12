@@ -59,8 +59,8 @@ plugins:
 
 author:
   name   : "Kubecost blog"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "New Kubecost product features and the latest in Kubernetes technology."
+  avatar : "/assets/images/kubecost-icon.png"
+  bio    : "New Kubecost features and the latest in Kubernetes technology."
   links:
     - label: "Kubecost site"
       icon: "fas fa-fw fa-link"
