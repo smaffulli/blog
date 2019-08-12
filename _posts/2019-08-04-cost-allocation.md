@@ -2,6 +2,7 @@
 title: "Kubernetes cost monitoring: approaches & best practices"
 date: 2019-08-12T18:34:30-04:00
 canonical_url: "http://blog.kubecost.com/blog/cost-allocation/"
+classes: wide
 categories:
   - blog
 tags:
