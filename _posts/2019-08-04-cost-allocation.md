@@ -50,7 +50,7 @@ Here are some of the lessons we have learned when implementing cost monitoring s
     3. _How do we clearly separate resources?_ We’ve seen that using namespaces for team/department allocation can lead to the cleanest division in resources. The right solution depends on organizational maturity though.   
     4. _Do we allocate based on resource requests or usage?_ Our experiences show that the max of requests and usage is often best, but this may not be correct for teams that don’t have control on setting both.
     5. _How do you account for short-lived jobs?_ There are key technical decisions (e.g. sample frequency) that may impact how teams with short-lived but expensive jobs are billed.   
-
+  
 3. **Define accountability with clearly labeled ownership.** We’ve seen that it’s important that each resource has a clearly established owner. Oftentimes this is done effectively with an escalation approach or with admission controllers. An escalation approach can be implemented by defining an owner label at the deployment level, namespace level, and at the cluster level. This creates a clear escalation path should a major issue arise. This labeling can be enforced with an Open Policy Agent or directly an admission controller webhook.
 
 4. **Review data on a consistent basis.** We’ve seen teams that proactively review data, typically on a weekly or bi-weekly basis, are able to quickly catch or prevent any major wasteful cloud spending. Regularly emails, in addition to alerts for egregius overspending, can help ensure issues get caught quickly without being a major distraction.
