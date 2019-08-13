@@ -25,7 +25,7 @@ Anecdotally, we have seen organizations consistently reduce spend by 30-70% afte
 
 ## Cost monitoring approaches
 
-Kubernetes **chargeback** is where an organization implements an accounting system to allocate k8s infrastructure costs and related cloud spend (e.g. databases and storage buckets) back to the individual teams or business units that consumed these resources. These internal or external clients actually receive bills for the resources they have consumed. Successfully rollouts typically have organizational buy-in with expectations clearly communicated to application engineering teams. 
+Kubernetes **chargeback** is where an organization implements an accounting system to allocate k8s infrastructure costs and related cloud spend (e.g. databases and storage buckets) back to the individual teams or business units that consumed these resources. These internal or external clients actually receive bills for the resources they have consumed. Successful rollouts typically have broad organizational buy-in with expectations clearly communicated to engineering team leads. 
 
 **Showback** is a similar concept but does not actually cross-charge costs and instead broadly shares cost allocation data with teams for informational purposes only. While there are key differences between showback and chargeback, the majority of lessons we have learned apply to both.
 
