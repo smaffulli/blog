@@ -58,6 +58,6 @@ Here are some of the lessons we have learned when implementing cost monitoring s
 
 Most Kubernetes chargeback efforts hit roadblocks not because of technical challenges but because of practical implementation setbacks. Establishing transparency and a sense of fairness across business units and application engineering teams requires both the right tools, transparency, and documentation. Effective cost and resource monitoring in a Kubernetes environment can lead to big gains, consistently reducing cloud spend by 30% or more. It can also help create a culture of awareness with other impact on security and productivity. 
 
-[Kubecost](http://kubecost.com) uses open source models to monitor and manage resources in dynamic Kubernetes environments. Reach out (<team@kubecost> or Slack) or visit our [website](http://kubecost.com) if you want to learn more.
+[Kubecost](http://kubecost.com) uses [open source models](https://github.com/kubecost) to monitor and manage resources in dynamic Kubernetes environments. Reach out (<team@kubecost> or [Slack](https://join.slack.com/t/kubecost/shared_invite/enQtNTA2MjQ1NDUyODE5LTg0MzYyMDIzN2E4M2M5OTE3NjdmODJlNzBjZGY1NjQ3MThlODVjMGY3NWZlNjQ5NjIwNDc2NGU3MWNiM2E5Mjc)) or visit our [website](http://kubecost.com) if you want to learn more.
 
 
