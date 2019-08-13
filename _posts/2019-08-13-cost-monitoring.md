@@ -33,7 +33,7 @@ There are also **limited monitoring** approaches where a subset of teams (e.g. D
 
 ![cost monitoring approaches](/assets/images/cost-monitoring-approaches.png)
 
-We have also seen **hybrid cost monitoring** models where teams are only charged for resources if they go over a predetermined budget for their operations, or are only billed for certain resources. These approaches can be tricky and also require very clearly set expectations.
+We have also seen **hybrid cost monitoring** models where teams are only charged for resources if they go over a predetermined budget for their operations, or are only billed for certain resources. Hybrid approaches can be tricky and also require very clearly set expectations.
 
 
 
@@ -51,7 +51,7 @@ Here are some of the lessons we have learned when implementing cost monitoring s
     4. _Do we allocate based on resource requests or usage?_ Our experiences show that the max of requests and usage is often best, but this may not be correct for teams that don’t have control on setting both.
     5. _How do you account for short-lived jobs?_ There are key technical decisions (e.g. sample frequency) that may impact how teams with short-lived but expensive jobs are billed.   
   
-3. **Define accountability with clearly labeled ownership.** We’ve seen that it’s important that each resource has a clearly established owner. Oftentimes this is done effectively with an escalation approach or with admission controllers. An escalation approach can be implemented by defining an owner label at the deployment level, namespace level, and at the cluster level. This creates a clear escalation path should a major issue arise. This labeling can be enforced with an Open Policy Agent or directly an admission controller webhook.
+3. **Establish clear owners.** We’ve seen that it’s important that each resource has a clearly established owner. This can be done effectively with an escalation approach or with admission controllers. An escalation approach can be implemented by defining an owner label at the deployment level, namespace level, and at the cluster level. This creates a clear escalation path should a major issue arise. This labeling can be enforced with an Open Policy Agent or directly an admission controller webhook.
 
 4. **Review data on a consistent basis.** We’ve seen teams that proactively review data, typically on a weekly or bi-weekly basis, are able to quickly catch or prevent any major wasteful cloud spending. Regularly emails, in addition to alerts for egregius overspending, can help ensure issues get caught quickly without being a major distraction.
 
