@@ -57,6 +57,11 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-129422090-2"
+
 author:
   name   : "Kubecost blog"
   avatar : "/assets/images/kubecost-icon.png"
