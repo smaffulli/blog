@@ -10,8 +10,6 @@ tags:
   - Kubecost
 ---
 
-# A Practical Guide to Setting Kubernetes Requests and Limits
-
 Setting Kubernetes requests and limits effectively has a major impact on application performance, stability, and cost. 
 And yet working with many teams over the past year has shown us that determining the right values for these parameters is hard. 
 For this reason, we have created this short guide and are launching a new product to help teams more accurately set Kubernetes requests and limits for their applications.
@@ -20,7 +18,7 @@ For this reason, we have created this short guide and are launching a new produc
 
 Resource requests and limits are optional parameters specified at the container level. Kubernetes computes a Pod’s request and limit as the sum of requests and limits across all of its containers. Kubernetes then uses these parameters for scheduling and resource allocation decisions. 
 
-<photo>
+![resource recs](/assets/images/k8s-recs-ands-limits.png)
 
 **Requests**
 
@@ -73,7 +71,6 @@ Request | Too low | Too high
 CPU | Starvation -- may not get CPU cycles needed | Inefficiency -- requires extra CPUs to schedule other Pods
 Memory | Kill risk -- may be terminated if other pods need memory | Inefficiency -- requires extra RAM to schedule other Pods
 
-
 When setting limits, the tradeoffs are similar but not quite the same. The tradeoff here is the relative performance of individual applications on your shared infrastructure vs the total cost of running these applications. For example, setting the aggregated amount of CPU limits higher than the allocated number of CPUs exposes applications to potential throttling risk. Provisioning additional CPUs (i.e. increase spend) is one potential answer while reducing CPU limits for certain applications (i.e. increase throttling risk) is another.
 
 Limit | Too low | Too high
@@ -104,7 +101,7 @@ Quotas set aggregate caps at the namespace level and can help protect tasks like
 
 Seeing the difficulty of setting these parameters correctly and managing them over time motivated us to create a solution in the Kubecost product to directly generate recommendations for your applications. Our recommendations are based on a configurable Availability Tiers (e.g. Production or Dev), which is easily tracked by namespace or other concepts directly in the Kubecost product. 
 
--- image
+![resource recs](/assets/images/kubecost-recs.png)
 
 In addition to providing request recommendations, this solution also proactively detects out of memory and CPU throttle risks. The full Kubecost product is available via a single Helm command (install options) and these recommendations can easily be viewed for each container in the Namespace view. Our commercial product is free for small clusters, comes with a free trial for larger clusters, and is based on the Kubecost open source project. 
 
