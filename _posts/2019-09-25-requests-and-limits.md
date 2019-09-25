@@ -109,7 +109,7 @@ Also, here are sample Prometheus queries if you want to calculate these metrics 
 
 **Memory Request (Production Tier)**
 
-We recommend `container_memory_working_set_bytes` because this metric excludes cached data and is what Kubernetes uses for OOM/scheduling decisions. More info in this article.
+We recommend `container_memory_working_set_bytes` because this metric excludes cached data and is what Kubernetes uses for OOM/scheduling decisions. More info in this [article](https://medium.com/faun/how-much-is-too-much-the-linux-oomkiller-and-used-memory-d32186f29c9d).
 
 ```
 1.5 * avg(quantile_over_time(.99,container_memory_working_set_bytes{container_name!="POD",container_name!=""}[7d])) by (container_name,pod_name,namespace)
