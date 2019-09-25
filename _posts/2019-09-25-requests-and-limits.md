@@ -56,8 +56,8 @@ spec:
 
 CPU requests are set in cpu units where 1000 millicpu (“m”) equals 1 vCPU or 1 Core. So 250m CPU equals ¼ of a CPU. Memory can be set with Ti, Gi, Mi, or Ki units. For more advanced technical info on the mechanics of these parameters, we suggest these articles:
 
-* https://github.com/kubernetes/community/blob/master/contributors/design-proposals/node/resource-qos.md
-* https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+* <https://github.com/kubernetes/community/blob/master/contributors/design-proposals/node/resource-qos.md>
+* <https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/>
 
 ## The Tradeoffs
 
@@ -103,11 +103,11 @@ Seeing the difficulty of setting these parameters correctly and managing them ov
 
 ![resource recs](/assets/images/kubecost-request-recs.png)
 
-In addition to providing request recommendations, this solution also proactively detects out of memory and CPU throttle risks. The full Kubecost product is available via a single Helm command (install options) and these recommendations can easily be viewed for each container in the Namespace view. Our commercial product is free for small clusters, comes with a free trial for larger clusters, and is based on the Kubecost open source project. 
+In addition to providing request recommendations, this solution also proactively detects out of memory and CPU throttle risks. The full Kubecost product is available via a single Helm command ([install options](http://docs.kubecost.com/install)) and these recommendations can easily be viewed for each container in the Namespace view. Our commercial product is free for small clusters, comes with a free trial for larger clusters, and is based on the [Kubecost open source project](https://github.com/kubecost/cost-model). 
 
 Also, here are sample Prometheus queries if you want to calculate these metrics yourself!
 
-Memory Request (Production Tier)
+**Memory Request (Production Tier)**
 
 We recommend `container_memory_working_set_bytes` because this metric excludes cached data and is what Kubernetes uses for OOM/scheduling decisions. More info in this article.
 
@@ -115,7 +115,7 @@ We recommend `container_memory_working_set_bytes` because this metric excludes c
 1.5 * avg(quantile_over_time(.99,container_memory_working_set_bytes{container_name!="POD",container_name!=""}[7d])) by (container_name,pod_name,namespace)
 ```
 
-CPU Request (Production Tier)
+**CPU Request (Production Tier)**
 
 First, create a recording rule with this expression. Note we recommend using `irate` to capture short-term spike is resource needs.
 
@@ -137,11 +137,11 @@ The goal of vertical pod autoscaling (VPA) is to remove the need to worry about 
 * To appropriately handle scale up events, it’s recommended that Cluster Autoscaler also be enabled to handle the increased resource requirements sizes of your workloads.
 * The VPA requires careful tuning to implement a tier-based solution with different parameters for highly available apps, dev, prod, staging etc.
 
-We advise teams to be cautious when using VPA this solution for critical production workloads. It introduces complexity to your infrastructure and you should adequately ensure that your deployments and VPA itself are configured correctly. Risks aside, it can be a great solution when applied correctly.  
+We advise teams to be cautious when using VPA for critical production workloads. It introduces complexity to your infrastructure and you should adequately ensure that your deployments and VPA itself are configured correctly. Risks aside, it can be a great solution when applied correctly.  
 
 More info on VPA is available here: 
-* https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler
-*https://github.com/kubernetes/community/blob/master/contributors/design-proposals/autoscaling/vertical-pod-autoscaler.md
+* <https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler>
+* <https://github.com/kubernetes/community/blob/master/contributors/design-proposals/autoscaling/vertical-pod-autoscaler.md>
 
 ## Conclusion
 
@@ -149,6 +149,6 @@ Setting requests and limits effectively can make or break application performanc
 
 ## About Kubecost 
 
-We provide cost and capacity management tools purpose built for Kubernetes. We help teams do Kubernetes chargeback and more. Reach out via email (team@kubecost), Slack or visit our website if you want to talk shop or learn more! 
+[Kubecost](http://kubecost.com) provides cost and capacity management tools purpose built for Kubernetes. We help teams do Kubernetes chargeback and more. Reach out via email (team@kubecost), [Slack](https://join.slack.com/t/kubecost/shared_invite/enQtNTA2MjQ1NDUyODE5LWFjYzIzNWE4MDkzMmUyZGU4NjkwMzMyMjIyM2E0NGNmYjExZjBiNjk1YzY5ZDI0ZTNhZDg4NjlkMGRkYzFlZTU) or visit [our website](http://kubecost.com) if you want to talk shop or learn more! 
 
 A big thanks to all that have given us feedback and made contributions!
