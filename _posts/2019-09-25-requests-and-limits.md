@@ -101,7 +101,7 @@ Quotas set aggregate caps at the namespace level and can help protect tasks like
 
 Seeing the difficulty of setting these parameters correctly and managing them over time motivated us to create a solution in the Kubecost product to directly generate recommendations for your applications. Our recommendations are based on a configurable Availability Tiers (e.g. Production or Dev), which is easily tracked by namespace or other concepts directly in the Kubecost product. 
 
-![resource recs](/assets/images/kubecost-recs.png)
+![resource recs](/assets/images/kubecost-request-recs.png)
 
 In addition to providing request recommendations, this solution also proactively detects out of memory and CPU throttle risks. The full Kubecost product is available via a single Helm command (install options) and these recommendations can easily be viewed for each container in the Namespace view. Our commercial product is free for small clusters, comes with a free trial for larger clusters, and is based on the Kubecost open source project. 
 
