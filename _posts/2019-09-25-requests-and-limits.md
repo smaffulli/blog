@@ -1,7 +1,7 @@
 ---
 title: "A Practical Guide to Setting Kubernetes Requests and Limits"
 date: 2019-09-25T08:34:30-04:00
-canonical_url: "http://blog.kubecost.com/blog/accurate-requests-limits/"
+canonical_url: "http://blog.kubecost.com/blog/requests-and-limits/"
 classes: wide
 categories:
   - blog
