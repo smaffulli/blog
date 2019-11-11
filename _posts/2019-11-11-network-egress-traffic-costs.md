@@ -36,7 +36,7 @@ completing the [installation](http://kubecost.com/install) for the free or paid 
 
 ## How it works
 
-This feature collects data by connecting directly to the Linux kernel via the nf_conntrack module. It builds a map within your cluster to determine all known IP addresses. Any unknown IP addresses are assumed to be internet egress. For known IP addresses in your VPC, we enable whitelisting CIDR blocks or a list of IP addresses. 
+This feature collects data by connecting directly to the Linux kernel via the nf_conntrack module. It builds a map within your cluster to determine all known IP addresses. Any unknown IP addresses are assumed to be internet egress. For known IP addresses in your VPC, we enable whitelisting CIDR blocks or a list of IP addresses. All historical data resides in your own infrastructure. 
 
 
 We hope this tool is useful for you in avoiding major privacy/security issues and cost overruns! Please reach out (team@kubecost.com) if we can help or if you have any questions!
