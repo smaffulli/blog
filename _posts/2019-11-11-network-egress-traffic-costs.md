@@ -10,8 +10,6 @@ tags:
   - Kubecost
 ---
 
-# Measuring Kubernetes cluster egress & network cost
-
 Late last year, we had an unpredicted experience while on-boarding a gaming company to the [Kubecost](http://kubecost.com) platform. 
 A principal engineer on their team was investigating latency in a related service and discovered a large amount of network traffic to a country where they had little to no users. 
 Following this suspicious trail, he eventually discovered cryptomining malware in their Kubernetes cluster that was installed after exploiting a docker vulnerability. 
