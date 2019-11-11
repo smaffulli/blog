@@ -32,8 +32,11 @@ It’s already being used to determine the root cause of network cost increases 
 
 Network traffic and cost visibility is available by Kubernetes namespace, deployment, pod/job, and even IP address. 
 This feature can be turned on in seconds ([docs](http://docs.kubecost.com/network-allocation)) after 
-completing the [installation](http://kubecost.com/install) for the free or paid version of Kubecost. 
-This feature talks directly to the Linux kernel to collect data and it doesn’t send any of this information outside of your infrastructure. 
-It is available for Kubernetes clusters on AWS, GCP, and Azure. 
+completing the [installation](http://kubecost.com/install) for the free or paid version of Kubecost. It is available for Kubernetes clusters on AWS, GCP, and Azure. 
 
-We hope this tool is useful for you in avoiding major privacy/security issues and cost overruns! 
+## How it works
+
+This feature collects data by connecting directly to the Linux kernel via the nf_conntrack module. It builds a map within your cluster to determine all known IP addresses. Any unknown IP addresses are assumed to be internet egress. For known IP addresses in your VPC, we enable whitelisting CIDR blocks or a list of IP addresses. 
+
+
+We hope this tool is useful for you in avoiding major privacy/security issues and cost overruns! Please reach out (team@kubecost.com) if we can help or if you have any questions!
