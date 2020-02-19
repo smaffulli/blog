@@ -67,5 +67,5 @@ Our products provide showback/chargeback, resource optimization insights, and mo
 
 This new tool is only the tip of the iceberg with respect to cluster right-sizing. 
 We hope you’ll find it useful! 
-If you have any questions or feedback, please reach out to us at any time on [Slack](http://kubecost.slack.com) or at [team@kubecost.com](mailto:team@kubecost.com).
+If you have any questions or feedback, please reach out to us at any time on [Slack](https://join.slack.com/t/kubecost/shared_invite/enQtNTA2MjQ1NDUyODE5LWFjYzIzNWE4MDkzMmUyZGU4NjkwMzMyMjIyM2E0NGNmYjExZjBiNjk1YzY5ZDI0ZTNhZDg4NjlkMGRkYzFlZTU) or at [team@kubecost.com](mailto:team@kubecost.com).
 
