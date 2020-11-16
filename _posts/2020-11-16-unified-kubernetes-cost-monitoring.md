@@ -21,7 +21,7 @@ This new functionality lets teams see all Kubernetes and out of cluster spend on
 <br/>
 This feature is available for free today, is built on open source, and supports AWS and GCP. 
 It joins real-time Kubernetes cost data with cloud billing data and allows teams to: 
-<br/><br/>
+<br/>
 
 * Without any tagging, see costs broken down by Kuberenetes and other cloud services.
 * View unified costs by team, department, project, etc by joining costs incurred in a Kubernetes cluster with costs incurred outside, e.g. tagged RDS instances or S3 buckets.
