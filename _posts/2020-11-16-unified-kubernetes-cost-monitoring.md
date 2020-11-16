@@ -1,7 +1,7 @@
 ---
-title: "Kubernetes cost monitoring: Getting the complete picture"
+title: "How to get the complete picture when monitoring Kubernetes costs"
 date: 2020-11-16T11:34:30-04:00
-canonical_url: "http://blog.kubecost.com/blog/unified-kubernetes-cost-monitoring/"
+canonical_url: "http://blog.kubecost.com/blog/complete-picture-when-monitoring-kubernetes-costs/"
 classes: wide
 categories:
   - blog
