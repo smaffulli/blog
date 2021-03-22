@@ -64,7 +64,7 @@ analytics:
 
 author:
   name   : "Kubecost blog"
-  avatar : "/assets/images/kubecost-icon.png"
+  avatar : "/assets/images/kubecost-mark.png"
   bio    : "New Kubecost features and the latest in Kubernetes technology."
   links:
     - label: "Kubecost site"
