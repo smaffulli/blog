@@ -1,6 +1,6 @@
 ---
 title: "Kubecost raises $5.5 million to help teams monitor and reduce their Kubernetes spend"
-date: 2021-03-23T08:34:30-04:00
+date: 2021-03-23T09:04:30-08:00
 canonical_url: "http://blog.kubecost.com/blog/announcing-kubecost-first-round/"
 classes: wide
 categories:
