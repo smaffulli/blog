@@ -12,7 +12,7 @@ tags:
 ---
 
 
-In late 2019, we launched the Kubecost [open source project](https://github.com/kubecost/cost-model) to help give engineers visibility into spend and resource efficiency in Kubernetes environments. Today, we’re incredibly proud to announce that we have built an amazing team, formed a company around [Kubecost](http://kubecost.com/), and raised $5.5 million in funding led by First Round Capital.
+In 2019, we launched the Kubecost [open source project](https://github.com/kubecost/cost-model) to help give engineers visibility into spend and resource efficiency in Kubernetes environments. Today, we’re incredibly proud to announce that we have built an amazing team, formed a company around [Kubecost](http://kubecost.com/), and raised $5.5 million in funding led by First Round Capital.
 
 ## Massive Kubernetes growth, but a lack of visibility
 
