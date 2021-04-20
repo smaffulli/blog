@@ -43,7 +43,7 @@ Monthly rate projection broken down by deployment, including a more detailed loo
 
 How much each namespace cost last month, including CPU cost and efficiency.
 
-![Namespace historical all metrics](/assets/images/kubectl-cost_namespace_historical.png)
+![Namespace historical all metrics](/assets/images/kubectl-cost_namespace_historical_all.png)
 
 How much each namespace cost yesterday, with all resource-specific costs and efficiencies displayed. This highlights the granular detail at which Kubecost collects cost metrics. 
 
