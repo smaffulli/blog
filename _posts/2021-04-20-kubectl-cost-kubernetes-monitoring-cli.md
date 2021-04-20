@@ -57,7 +57,8 @@ If you have [Krew](https://krew.sigs.k8s.io/), the kubectl plugin manager, alrea
 ```
 kubectl krew install cost
 ```
-### Linux and MaxOS
+
+### Linux and MacOS
 
 ```
 os=$(uname | tr '[:upper:]' '[:lower:]') && \
