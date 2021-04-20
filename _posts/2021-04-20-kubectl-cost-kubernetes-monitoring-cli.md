@@ -72,11 +72,11 @@ sudo mv /tmp/kubectl-cost /usr/local/bin/kubectl-cost
 If you would prefer to build from source, you can check out the [README](https://github.com/kubecost/kubectl-cost#latest-release) of kubectl cost for detailed instructions.
 
 # How it works
-By default, Kubecost integrates with cloud provider billing APIs with support for AWS/EKS, Azure/AKS, GCP/GKE, and on-prem clusters via custom pricing sheets.
-Kubecost can integrate with your cloud provider billing data directly to accurately reflect enterprise discounts, spot prices, reserved instances, savings plans, and more.
-Compute and memory costs are calculated using the max of resource usage and resource requests.
-Network costs are optional and are enabled via the [network-costs daemonset](https://github.com/kubecost/docs/blob/master/network-allocation.md). 
-Monthly rate projections are based on average run rate for each individual workload over the measured window. 
+- By default, Kubecost integrates with cloud provider billing APIs with support for AWS/EKS, Azure/AKS, GCP/GKE, and on-prem clusters via custom pricing sheets.
+- Kubecost can integrate with your cloud provider billing data directly to accurately reflect enterprise discounts, spot prices, reserved instances, savings plans, and more.
+- Compute and memory costs are calculated using the max of resource usage and resource requests.
+- Network costs are optional and are enabled via the [network-costs daemonset](https://github.com/kubecost/docs/blob/master/network-allocation.md). 
+- Monthly rate projections are based on average run rate for each individual workload over the measured window. 
 
 # Learning more
 There’s tons more to discover, check out the [documentation](https://github.com/kubecost/kubectl-cost/blob/main/README.md) and `kubectl cost --help` to keep going. We’re also going to be adding more functionality in the coming weeks. So [join our Slack community](https://join.slack.com/t/kubecost/shared_invite/enQtNTA2MjQ1NDUyODE5LWFjYzIzNWE4MDkzMmUyZGU4NjkwMzMyMjIyM2E0NGNmYjExZjBiNjk1YzY5ZDI0ZTNhZDg4NjlkMGRkYzFlZTU) or reach out to team@kubecost.com if you have questions or additional features you’d like to see!
