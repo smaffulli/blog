@@ -1,5 +1,5 @@
 ---
-title: "Hello kubectl cost: the easiest way to monitor Kubernetes costs!"
+title: "Hello kubectl: cost monitoring Kubernetes from the command line!"
 date: 2021-04-20T11:34:00-04:00
 author: Michael Dresser
 classes: wide
