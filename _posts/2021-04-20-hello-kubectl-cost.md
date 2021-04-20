@@ -14,7 +14,7 @@ If you're terminal-loving engineers using Kubernetes like us, kubectl is your co
 
 Here’s an example of it in action: 
 
-![GIF of usage](/assets/images/images/kubectl-cost-usage-shortened.gif)
+![GIF of usage](/assets/images/kubectl-cost-usage-shortened.gif)
 
 For teams running Kubernetes, gaining visibility into the cost of resources can be hard, especially in dynamic multi-tenant environments. [Kubecost](https://www.kubecost.com/) helps teams—developers, managers, executives, and everyone in-between—running Kubernetes understand their cluster spend precisely, all the way down to the pod level. One of our primary goals is to provide cost visibility into tools that teams are already using. 
 
