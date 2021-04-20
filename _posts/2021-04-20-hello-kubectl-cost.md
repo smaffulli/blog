@@ -1,6 +1,7 @@
 ---
 title: "Hello kubectl cost: the easiest way to monitor Kubernetes costs!"
 date: 2021-04-20T11:34:00-04:00
+canonical_url: "http://blog.kubecost.com/blog/hello-kubectl-cost/"
 author: Michael Dresser
 classes: wide
 categories:
