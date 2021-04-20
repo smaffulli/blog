@@ -64,6 +64,7 @@ os=$(uname | tr '[:upper:]' '[:lower:]') && \
 arch=$(uname -m | tr '[:upper:]' '[:lower:]' | sed -e s/x86_64/amd64/) && \
 curl https://github.com/kubecost/kubectl-cost/releases/latest/kubectl-cost-${os}-${arch} \
     --output /tmp/kubectl-cost && \
+chmod +x /tmp/kubectl-cost && \
 sudo mv /tmp/kubectl-cost /usr/local/bin/kubectl-cost
 ```
 ### Install from source
