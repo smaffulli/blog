@@ -61,16 +61,13 @@ An absence of cost alerts can lead to:
 Two of the key features of Kubecost are its cost allocation views for granular insights and its notifications triggered by cost alerts. 
 
 
-### **1. Granular Insights**
+### 1. Granular Insights
 
 Kubecost can break costs down to any Kubernetes component level (according to usage), down to individual workloads. The cost allocation model supports all native Kubernetes concepts, including cluster, namespace, controller, deployment, service, label, pod, and container.
 
 ![Bird's eye view of overall cluster cost usage](/assets/images/2021-05-12-alerts/image6.png "Bird's eye view of overall cluster cost usage")
 
 The view below shows a deployment along with its allocated costs and its resource efficiency score (by comparing idle to used resources), as well as its health score (calculated based on checks conveniently pre-configured based on industry best practices).
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![Cost attribution, efficiency and health report for a particular workload](/assets/images/2021-05-12-alerts/image4.png "Cost attribution, efficiency and health report for a particular workload")
 
@@ -116,15 +113,9 @@ When you [set up alerts](http://docs.kubecost.com/alerts.html) based on usage pe
 ![Kubecost Email Notification](/assets/images/2021-05-12-alerts/image7.png "Kubecost Email Notification")
 
 
-Kubecost Email Notification
-
-
 #### Via Slack
 
 ![Kubecost Slack Notification ](/assets/images/2021-05-12-alerts/image5.png "Kubecost Slack Notification ")
-
-
-Kubecost Slack Notification 
 
 
 #### Via Webhook
@@ -226,8 +217,8 @@ Let kubecost run for a couple of hours before taking a full tour so that there i
 
 ## Setup Tips
 
-*   Kubecost integrates with most Identity providers (such as Google Auth) and also supports SAML-based authentication. All of this can be configured in the Helm values file. 
-*   Kubecost uses Prometheus [alertmanager](https://prometheus.io/docs/alerting/alertmanager/) for alert delivery. If you already have an instance of alertmanager running, you can configure its endpoint in the Helm values file and kubecost can use that for alert notifications. 
+Kubecost integrates with most Identity providers (such as Google Auth) and also supports SAML-based authentication. All of this can be configured in the Helm values file. 
+Kubecost uses Prometheus [alertmanager](https://prometheus.io/docs/alerting/alertmanager/) for alert delivery. If you already have an instance of *alertmanager* running, you can configure its endpoint in the Helm values file and kubecost can use that for alert notifications. 
 
 ```
   notifications:
