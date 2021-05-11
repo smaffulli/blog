@@ -39,7 +39,7 @@ A simplified pricing exercise would look like this:
 
 1. Calculate your **cost of sales** (add all direct service delivery expenses).
 2. Calculate your service's **gross profit** (sales minus cost of sales).
-3. Calculate your actual **[gross margin](https://kpisense.com/glossary/cost-of-goods-sold)** (gross profit divided by sales).
+3. Calculate your actual **gross margin** (gross profit divided by sales).
 4. Set a **target gross margin** (as a percentage such as 85%).
 5. Determine what **pricing** (set by application owners) achieves your target gross margin (once your direct expenses are as efficient as possible). 
 6. Set monthly **budgets** for your expenses relative to your projected sales.
@@ -55,11 +55,9 @@ An absence of cost alerts can lead to:
 *   Under-pricing of your services
 *   Poor visibility for business planning 
 
-
 ## How Kubecost Adds Clarity 
 
 Two of the key features of Kubecost are its cost allocation views for granular insights and its notifications triggered by cost alerts. 
-
 
 ### 1. Granular Insights
 
@@ -72,7 +70,6 @@ The view below shows a deployment along with its allocated costs and its resourc
 ![Cost attribution, efficiency and health report for a particular workload](/assets/images/2021-05-12-alerts/image4.png "Cost attribution, efficiency and health report for a particular workload")
 
 These historical cost measurements can serve as benchmarks for setting initial alerting or budget thresholds.
-
 
 ### 2. Notifications
 
@@ -107,29 +104,23 @@ When you [set up alerts](http://docs.kubecost.com/alerts.html) based on usage pe
 
 ![Notifications Menu in Kubecost](/assets/images/2021-05-12-alerts/image2.png "Notifications Menu in Kubecost")
 
-
 #### Via Email
 
 ![Kubecost Email Notification](/assets/images/2021-05-12-alerts/image7.png "Kubecost Email Notification")
-
 
 #### Via Slack
 
 ![Kubecost Slack Notification ](/assets/images/2021-05-12-alerts/image5.png "Kubecost Slack Notification ")
 
-
 #### Via Webhook
 
 A third option is to simply use a generic webhook to integrate with just about any third-party tool such as PagerDuty or OpsGenie.
 
-
 ## How to Get Started with Kubecost Alerts
-
 
 ### 1. Install Kubecost  
 
 Installing Kubecost in your Kubernetes cluster only takes a few minutes using Helm. Follow the [installation guide](https://www.kubecost.com/install) and can configure all of the alerts in the Helm values section as shown below.
-
 
 ### 2. Set up Cost Alerts
 
@@ -140,7 +131,6 @@ You can configure your cost alerts from the [Kubecost Helm values file](https://
 *   Add notifications for stakeholder awareness
 
 The following is an example of a Helm values block. 
-
 
 ```
   notifications:
@@ -214,7 +204,6 @@ kubectl port-forward --namespace kubecost deployment/kubecost-cost-analyzer 9090
 
 Let kubecost run for a couple of hours before taking a full tour so that there is enough data in the system to populate all fields.  
 
-
 ## Setup Tips
 
 Kubecost integrates with most Identity providers (such as Google Auth) and also supports SAML-based authentication. All of this can be configured in the Helm values file. 
@@ -233,7 +222,6 @@ Kubecost uses Prometheus [alertmanager](https://prometheus.io/docs/alerting/aler
 ```
 
 See the [Kubecost Alerts troubleshooting guide](https://github.com/kubecost/docs/blob/master/alerts.md#troubleshooting) or join the Kubecost [Slack group](https://join.slack.com/t/kubecost/shared_invite/enQtNTA2MjQ1NDUyODE5LWFjYzIzNWE4MDkzMmUyZGU4NjkwMzMyMjIyM2E0NGNmYjExZjBiNjk1YzY5ZDI0ZTNhZDg4NjlkMGRkYzFlZTU) for community advice and support.
-
 
 ## Conclusion
 
