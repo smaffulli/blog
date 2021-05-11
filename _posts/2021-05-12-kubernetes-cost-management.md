@@ -13,14 +13,14 @@ tags:
   - alerts
 ---
 
-Engineering teams can scale their Kubernetes costs and burn their budget with the same ease by which they scale their infrastructure. Thanks to Kubecost real-time alerting, the risk of upsetting the finance team can be mitigated. Kubernetes is well-known for its ability to help scale applications rapidly and with ease, but this ability comes with some tradeoffs. Before Kubernetes, teams had to follow a more deliberate procurement approval process to change the capacity allocation. Today, that scaling process has been democratized, and teams can easily scale their clusters up or down. 
+Engineering teams can scale their Kubernetes costs and burn their budget with the same ease by which they scale their infrastructure. Thanks to [Kubecost](https://kubecost.com) real-time alerting, the risk of upsetting the finance team can be mitigated. Kubernetes is well-known for its ability to help scale applications rapidly and with ease, but this ability comes with some tradeoffs. Before Kubernetes, teams had to follow a more deliberate procurement approval process to change the capacity allocation. Today, that scaling process has been democratized, and teams can easily scale their clusters up or down. 
 
 With the ability to create more frequent changes to infrastructure resources comes more opportunities to misallocate and over-allocate costly resources. In this model, technical teams can far exceed their expense budget without even realizing it, while financial managers would only notice it after the fact leading to avoidable organizational stress. So, how do you stay on top of your Kubernetes spending if your resources change daily?
 
 In this article, we'll look at how Kubecost alerting provides real-time updates on your budget, spending changes, and any opportunities for cost optimization. But before we dive into Kubecost, let's talk about alerts.
 
 
-## Why alerting is essential 
+## Why Alerting Is Essential 
 
 In ecosystems where a single platform supports multiple services, it's crucial to give all stakeholders the ability to track their individual services. This level of visibility requires allocating resource usage and cost to each service within a shared cluster. This clear ownership improves budget-based resource planning, identifies resource bottlenecks, and even helps manage security risks. Once your ecosystem is properly organized, the next step towards clarity is to set up cost alerts. 
 
@@ -29,7 +29,7 @@ Cost alerts help your organization avoid shocking cloud bills. And while global 
 For example, say you are running a single GKE cluster spanning 50 nodes with the ability to scale to 150. This cluster hosts many applications, each belonging to a different team. Calculating the cost of the entire cluster is a straightforward process using the [GCP Pricing Calculator](https://cloud.google.com/products/calculator). But doing so won't be useful for calculating the cost incurred separately by each application according to usage. It also cannot alert a service owner when the cost of running that service exceeds their budget of, say, $10,000 per month.
 
 
-## Direct Expenses Have Direct Impacts 
+## Direct Expenses Have a Direct Impact 
 
 How does an application service owner know if their service is making money or losing money for the company? 
 
