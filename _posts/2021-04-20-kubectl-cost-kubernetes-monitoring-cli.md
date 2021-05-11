@@ -2,7 +2,6 @@
 title: "Hello kubectl cost: monitoring Kubernetes spend from the command line!"
 date: 2021-04-20T11:34:00-04:00
 canonical_url: "http://blog.kubecost.com/blog/kubectl-cost-kubernetes-monitoring-cli/"
-author: Michael Dresser
 classes: wide
 categories:
   - blog
