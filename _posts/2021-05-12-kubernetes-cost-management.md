@@ -189,8 +189,6 @@ Once deployed, you'll see the following workloads in your cluster:
 
 ### 4. View 
 
-We recommend accessing Kubecost's UI by exposing it over an [ingress](https://docs.kubecost.com/getting-started#basic-auth). This is similar to how you might give access to other resources, such as a Jenkins UI. 
-
 If you would just like to quickly explore the product:
 
 1. Run the following command:
@@ -203,6 +201,8 @@ kubectl port-forward --namespace kubecost deployment/kubecost-cost-analyzer 9090
 3. Explore. 
 
 Let kubecost run for a couple of hours before taking a full tour so that there is enough data in the system to populate all fields.  
+
+When moving to production, you can expose Kubecost via [ingress](https://docs.kubecost.com/getting-started#basic-auth), SAML, or other mechanism that meets your security requirements. This is similar to how you might give access to other resources, such as a Jenkins UI. 
 
 ## Setup Tips
 
