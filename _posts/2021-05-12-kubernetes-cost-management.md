@@ -200,14 +200,14 @@ kubectl port-forward --namespace kubecost deployment/kubecost-cost-analyzer 9090
 2. Navigate to [http://localhost:9090](http://localhost:9090).
 3. Explore. 
 
-Let kubecost run for a couple of hours before taking a full tour so that there is enough data in the system to populate all fields.  
+Let Kubecost run for a couple of hours before taking a full tour so that there is enough data in the system to populate all fields.  
 
 When moving to production, you can expose Kubecost via [ingress](https://docs.kubecost.com/getting-started#basic-auth), SAML, or other mechanism that meets your security requirements. This is similar to how you might give access to other resources, such as a Jenkins UI. 
 
 ## Setup Tips
 
 Kubecost integrates with most Identity providers (such as Google Auth) and also supports SAML-based authentication. All of this can be configured in the Helm values file. 
-Kubecost uses Prometheus [alertmanager](https://prometheus.io/docs/alerting/alertmanager/) for alert delivery. If you already have an instance of *alertmanager* running, you can configure its endpoint in the Helm values file and kubecost can use that for alert notifications. 
+Kubecost uses Prometheus [alertmanager](https://prometheus.io/docs/alerting/alertmanager/) for alert delivery. If you already have an instance of *alertmanager* running, you can configure its endpoint in the Helm values file and Kubecost can use that for alert notifications. 
 
 ```
   notifications:
