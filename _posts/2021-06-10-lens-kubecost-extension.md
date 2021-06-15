@@ -1,9 +1,8 @@
 ---
 title: "How to use the Kubecost extension with Lens IDE"
-description: "Kubecost allows Azure AKS administrators to allocate and
-report on costs, calculate cluster efficiency and health, and alert on
-a budget excess."
-date: 2021-06-10T11:34:00-04:00
+description: "Monitor the costs of Kubernetes resources directly from
+Lens IDE with the open source Kubecost extension."
+date: 2021-06-15T11:34:00-04:00
 canonical_url: "http://blog.kubecost.com/blog/lens-kubecost/"
 classes: wide
 categories:
