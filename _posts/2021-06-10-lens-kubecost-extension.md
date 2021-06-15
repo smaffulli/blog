@@ -2,7 +2,7 @@
 title: "How to use the Kubecost extension with Lens IDE"
 description: "Monitor the costs of Kubernetes resources directly from
 Lens IDE with the open source Kubecost extension."
-date: 2021-06-15T11:34:00-04:00
+date: 2021-06-17T11:34:00-04:00
 canonical_url: "http://blog.kubecost.com/blog/lens-kubecost/"
 classes: wide
 categories:
@@ -14,11 +14,11 @@ tags:
   - Engineers
 ---
 
-[Lens](https://k8slens.dev/) is the most powerful IDE for those who need to deal with Kubernetes clusters on a daily basis. It allows you to interact with your cluster and view important metrics, including memory, compute, etc. A Kubecost and Lens integration allows you to visualize Kubernetes costs directly in the Lens UI. With Lens and Kubecost you can view costs and spend efficiency by namespace, pod, deployment and more!
+[Lens](https://k8slens.dev/) is the most powerful IDE for those who need to deal with Kubernetes clusters on a daily basis. It allows you to manage your cluster and view important health metrics. A Kubecost and Lens integration allows you to also visualize Kubernetes costs directly in the Lens UI. With Lens and Kubecost you can view costs and spend efficiency by namespace, pod, deployment and more!
 
-For most teams, it’s really difficult to understand the cost of Kubernetes workloads in an even somewhat static multi-tenant environment. When concepts like autoscaling are introduced, it becomes far more complex. This creates many challenges, including unintentional overspending, poor visibility for business planning, and missing costly bugs/mistakes 
+For most teams, it’s really difficult to understand the cost of Kubernetes workloads, even in a somewhat static multi-tenant environment. When concepts like autoscaling are introduced, it becomes far more complex. This creates many challenges, including unintentional overspending, poor visibility for business planning, and missing costly bugs/mistakes. Despite the fact that over 32% of respondents to the [2021 FinOps survey](https://data.finops.org/) collect and analyze cloud cost data using spreadsheets, those will only take you so far.
 
-The [open source integration](https://github.com/kubecost/kubecost-lens-extension) provides a direct view into these costs at different levels so you can understand what is driving overall costs and how efficiently they are being spent. In this first release you can see cost trends for any workload aggregation, e.g. pod, deployment, statefulset, namespace, etc. 
+To help engineering teams, we published an early version of a new [open source integration with Lens](https://github.com/kubecost/kubecost-lens-extension). It provides a direct view into Kubernetes costs so you can understand what is driving overall costs and how efficiently they are being spent. In this first release you can see cost trends for any workload aggregation, e.g. pod, deployment, statefulset, namespace. Future releases will be driven by the feedback we receive: Join [Kubecost Slack community](https://join.slack.com/t/kubecost/shared_invite/enQtNTA2MjQ1NDUyODE5LWFjYzIzNWE4MDkzMmUyZGU4NjkwMzMyMjIyM2E0NGNmYjExZjBiNjk1YzY5ZDI0ZTNhZDg4NjlkMGRkYzFlZTU) and let us know what features you'd like to see.
 
 <video src="/assets/images/2021-06-10-lens-kubecost/lens-kubecost-extension.mov" width="860" height="537" controls preload></video>
 
