@@ -1,5 +1,5 @@
 ---
-title: "How to use the Kubecost extension with Lens IDE"
+title: "How to monitor Kubernetes costs with Lens IDE"
 description: "Monitor the costs of Kubernetes resources directly from
 Lens IDE with the open source Kubecost extension."
 date: 2021-06-17T11:34:00-04:00
