@@ -28,13 +28,11 @@ Get started by installing the Kubecost stack in your cluster. Open Lens and conn
 
 ![Find Kubecost from the Lens Apps directory](/assets/images/2021-06-10-lens-kubecost/image3.png "Install Kubecost from the Lens Apps directory")
 
-
-Create a namespace called “kubecost” and install Kubecost cost-analyzer in it
+Create a namespace called “kubecost” and install Kubecost cost-analyzer in it.
 
 ![Install Kubecost in the kubecost namespace](/assets/images/2021-06-10-lens-kubecost/image5.png "Install Kubecost in the kubecost namespace")
 
-Once Kubecost is installed, you can add the Kubecost extension
-
+Once Kubecost is installed, you can add the Kubecost extension:
 
 *   Download the [latest tar.gz file release from GitHub](https://github.com/kubecost/kubecost-lens-extension/releases). Alternatively, just copy the download URL of the release artifact.
 *   Open Lens application and select Lens menu, and then click Extensions item, or press Shift + Command + E to open the Manage Lens Extensions page.
@@ -46,21 +44,14 @@ This will add a new panel in Lens UI showing costs of resources per namespace.
 
 ![See the new Costs panel in the Lens UI](/assets/images/2021-06-10-lens-kubecost/image6.png "See the new Costs panel in the Lens UI")
 
-
 To see the full Kubecost UI, from the Lens terminal, setup a port forward to your Kubernetes cluster with kubectl:
 
 ```
-
 kubectl port-forward --namespace kubecost deployment/kubecost-cost-analyzer 9090
-
 ```
 
 Open your browser pointing at [http://localhost:9090](http://localhost:9090) to view cost data.
 
-
 ![The Kubecost GUI in the browser](/assets/images/2021-06-10-lens-kubecost/image2.png "The Kubecost GUI in the browser")
 
-
-This installs the open source version of Kubecost which is good for monitoring one cluster with a default metric retention of 15 days. Other features are available in the [Business and Enterprise versions](https://www.kubecost.com/pricing/) of the product. Join [Kubecost Slack community](https://join.slack.com/t/kubecost/shared_invite/enQtNTA2MjQ1NDUyODE5LWFjYzIzNWE4MDkzMmUyZGU4NjkwMzMyMjIyM2E0NGNmYjExZjBiNjk1YzY5ZDI0ZTNhZDg4NjlkMGRkYzFlZTU) or [contact us](mailto:team@kubecost.com) if you want more! 
-
-
+This installs the open source version of Kubecost which is good for monitoring one cluster with a default metric retention of 15 days. Other features are available in the [Business and Enterprise versions](https://www.kubecost.com/pricing/) of the product. Join [Kubecost Slack community](https://join.slack.com/t/kubecost/shared_invite/enQtNTA2MjQ1NDUyODE5LWFjYzIzNWE4MDkzMmUyZGU4NjkwMzMyMjIyM2E0NGNmYjExZjBiNjk1YzY5ZDI0ZTNhZDg4NjlkMGRkYzFlZTU) or [contact us](mailto:team@kubecost.com) if you want more!
