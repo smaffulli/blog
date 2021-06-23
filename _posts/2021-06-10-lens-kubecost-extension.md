@@ -14,7 +14,7 @@ tags:
   - Engineers
 ---
 
-[Lens](https://k8slens.dev/) is the most powerful IDE for those who need to deal with Kubernetes clusters on a daily basis. It allows you to manage your cluster and view important health metrics. A Kubecost and Lens integration allows you to also visualize Kubernetes costs directly in the Lens UI. With Lens and Kubecost you can view costs and spend efficiency by namespace, pod, deployment and more!
+[Lens](https://k8slens.dev/) is the most powerful IDE for those who need to deal with Kubernetes clusters on a daily basis. It allows you to manage your cluster and view important health metrics. A [Kubecost](http://kubecost.com/) and Lens integration allows you to also visualize Kubernetes costs directly in the Lens UI. With Lens and Kubecost you can view costs and spend efficiency by namespace, pod, deployment and more!
 
 For most teams, it’s really difficult to understand the cost of Kubernetes workloads, even in a somewhat static multi-tenant environment. When concepts like autoscaling are introduced, it becomes far more complex. This creates many challenges, including unintentional overspending, poor visibility for business planning, and missing costly bugs/mistakes. Despite the fact that over 32% of respondents to the [2021 FinOps survey](https://data.finops.org/) collect and analyze cloud cost data using spreadsheets, those will only take you so far.
 
