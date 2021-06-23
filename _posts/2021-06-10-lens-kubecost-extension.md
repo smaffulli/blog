@@ -41,6 +41,8 @@ Once Kubecost is installed, you can add the Kubecost extension
 
 ![Install Kubecost Lens extension](/assets/images/2021-06-10-lens-kubecost/image7.png "Install Kubecost Lens extension")
 
+## View Kubernetes cost metrics
+
 To see the full Kubecost UI or to view cost metrics from the Lens terminal, setup a port forward to your Kubernetes cluster with kubectl:
 
 ```
@@ -53,6 +55,9 @@ This will add a new panel in Lens UI showing costs of resources per namespace.
 
 ![See the new Costs panel in the Lens UI](/assets/images/2021-06-10-lens-kubecost/image6.png "See the new Costs panel in the Lens UI")
 
+
+These cost metrics account for all active workloads in the namespace. By default, pricing is pulled from public cloud providers, with AWS, Azure, and GCP being supported today. You can add a Kubecost cloud integration to reflect prices from Spot nodes, enterprise discounts, reserved instances, and more.
+Custom pricing sheets are supported for for on-prem clusters.
 
 You can also point your browser to [http://localhost:9090](http://localhost:9090) to view more cost metrics.
 
