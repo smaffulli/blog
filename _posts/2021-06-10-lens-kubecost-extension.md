@@ -20,7 +20,7 @@ For most teams, it’s really difficult to understand the cost of Kubernetes wor
 
 To help engineering teams, we published an early version of a new [open source integration with Lens](https://github.com/kubecost/kubecost-lens-extension). It provides a direct view into Kubernetes costs so you can understand what is driving overall costs and how efficiently they are being spent. In this first release you can see cost trends for any workload aggregation, e.g. pod, deployment, statefulset, namespace. Future releases will be driven by the feedback we receive, so join Kubecost Slack community (link below!) and let us know what features you'd like to see.
 
-<video src="/assets/images/2021-06-10-lens-kubecost/lens-kubecost-extension.mov" width="860" height="537" controls preload></video>
+![The Kubecost Lens extension in action](/assets/images/2021-06-10-lens-kubecost/lens-kubecost-e.gif)
 
 ## Install Kubecost in your Kubernetes cluster using Lens IDE
 
@@ -29,11 +29,11 @@ Get started by installing the Kubecost stack in your cluster. Open Lens and conn
 ![Find Kubecost from the Lens Apps directory](/assets/images/2021-06-10-lens-kubecost/image3.png "Install Kubecost from the Lens Apps directory")
 
 
-Create a namespace called “kubecost” and install Kubecost cost-analyzer in it
+Create a namespace called “kubecost” and install Kubecost cost-analyzer in it.
 
 ![Install Kubecost in the kubecost namespace](/assets/images/2021-06-10-lens-kubecost/image5.png "Install Kubecost in the kubecost namespace")
 
-Once Kubecost is installed, you can add the Kubecost extension
+Once Kubecost is installed, you can add the Kubecost extension:
 
 *   Download the [latest tar.gz file release from GitHub](https://github.com/kubecost/kubecost-lens-extension/releases). Alternatively, just copy the download URL of the release artifact.
 *   Open the Lens application and select Lens menu, and then click Extensions item, or press Shift + Command + E to open the Manage Lens Extensions page.
