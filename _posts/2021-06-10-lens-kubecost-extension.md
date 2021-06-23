@@ -2,7 +2,7 @@
 title: "How to monitor Kubernetes costs with Lens IDE"
 description: "Monitor the costs of Kubernetes resources directly from
 Lens IDE with the open source Kubecost extension."
-date: 2021-06-17T11:34:00-04:00
+date: 2021-06-23T8:34:00-04:00
 canonical_url: "http://blog.kubecost.com/blog/lens-kubecost/"
 classes: wide
 categories:
