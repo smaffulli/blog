@@ -36,6 +36,7 @@ It joins real-time Kubernetes cost data with cloud billing data and allows teams
 2. Connect a cloud account
     - [AWS integration](https://github.com/kubecost/docs/blob/master/aws-cloud-integrations.md)
     - [GCP integration](https://github.com/kubecost/docs/blob/master/gcp-out-of-cluster.md)
+    - [Azure integration](https://docs.kubecost.com/azure-out-of-cluster.html)
 
 After completing these steps, you will be able to view your unified costs in the [Kubecost Assets UI](https://github.com/kubecost/docs/blob/master/assets.md) as well as the backing JSON API. 
 
