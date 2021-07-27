@@ -23,11 +23,11 @@ This feature is available for free today, is built on open source, and supports 
 It joins real-time Kubernetes cost data with cloud billing data and allows teams to: 
 <br/>
 
-* Without any tagging, see costs broken down by Kuberenetes and other cloud services.
+* Without any tagging, see costs broken down by Kubernetes and other cloud services.
 * View unified costs by team, department, project, etc by joining costs incurred in a Kubernetes cluster with costs incurred outside, e.g. tagged RDS instances or S3 buckets.
 * Drill down to individual Assets in a Kubernetes cluster, including nodes, disks, load balancers and more. These assets and their costs can be tied to owners with Kubecost Allocation APIs.
 * Drill down to all out-of-cluster cloud resources, e.g. Lambda, DynamoDB, or storage buckets, to determine detailed cost drivers
-* Supports multi-cluster, multi-account, and multi-provider views. Feature available on AWS + GCP today.
+* Supports multi-cluster, multi-account, and multi-provider views. Feature available on AWS, GCP, Azure and hybrid-cloud today.
 * Tightly integrate on-prem Kubernetes clusters with cloud services for hybrid environments 
 
 ## How to Set Up
