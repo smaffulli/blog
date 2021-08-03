@@ -139,12 +139,17 @@ The enforcement stage represents the ultimate level of financial control that an
 Business managers forecast quarterly sales based on their market expectations and economic conditions. With the sales forecast finalized, financial managers can calculate the total expenses that each business unit can afford while preserving profit or loss margins ultimately expected by shareholders. Historical spending helps negotiate a budget for each line item at the beginning of each fiscal quarter, thereby enforcing spending on a detailed level across each business unit, including Kubernetes infrastructure consumption.
 
 
-## Implementing Kubecost 
+## Installing Kubecost 
 
 Kubecost is a free and open-source tool created to help organizations manage the cost of multi-tenant Kubernetes clusters hosted in a data center, public cloud, or hybrid cloud. Within minutes after installation, it allocates cost by namespace or labels according to resource usage. It also provides industry best practices policies to detect performance bottlenecks or alert on an unexpected increase in spending.
 
-Kubecost can be installed in 5 minutes and is available for download as a Helm chart at the following link, where you can find further instructions: [https://www.kubecost.com/install.html](https://www.kubecost.com/install.html). 
+Kubecost can be installed in minutes and is available for download as a Helm chart. You can also find find further instructions at [https://www.kubecost.com/install.html](https://www.kubecost.com/install.html). 
 
+#### helm 3 install
+```
+helm repo add kubecost https://kubecost.github.io/cost-analyzer/
+helm upgrade -i --create-namespace kubecost kubecost/cost-analyzer --namespace kubecost --set kubecostToken="aGVsbUBrdWJlY29zdC5jb20=xm343yadf98"
+```
 
 ### Personalizing Your Settings
 
